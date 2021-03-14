@@ -1,5 +1,5 @@
 # AuctionManager
-This is an application which consists of 2 microservices. It is wriiten in node.js and uses mongodb as backend.
+This is an application which consists of 2 microservices. It is wriiten in node.js(v10.21.0) and uses mongodb as backend.
  - auth-service
  - auction-service
 
@@ -7,6 +7,7 @@ Please use the attached postman collection
  The configurations for each service is present in their respective config.js file. Update the mongodb port inside config.js
  - auction-service/config.js
  - auth-service/config.js
+
 
 ### Features
 - All crud operations on user
