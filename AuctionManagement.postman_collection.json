@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "af205065-8ccc-49d8-95fd-b73c83b8bd89",
+		"name": "AuctionManagementSellerone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auction-service",
+			"item": [
+				{
+					"name": "adminonly",
+					"item": [
+						{
+							"name": "localhost:4000/auction",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGNlMTIzOGU1OTk2OWJhYzFmZjBmNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNjE1NjUxMTA3fQ.Qjm5XSmfu7A7xvSFB-tgSXAUeTZe5D92Zgl2OrQ8RBo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"02-15-2021 14:00:00\", \n    \"endTime\": \"03-18-2021 20:33:00\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction/id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGNlMTIzOGU1OTk2OWJhYzFmZjBmNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNjE1NjUxMTA3fQ.Qjm5XSmfu7A7xvSFB-tgSXAUeTZe5D92Zgl2OrQ8RBo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"02-15-2021 14:00:00\", \n    \"endTime\": \"03-18-2021 20:33:00\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction/604dc9f3128d3320eb013304",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction",
+										"604dc9f3128d3320eb013304"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGNlMTIzOGU1OTk2OWJhYzFmZjBmNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNjE1NjUxMTA3fQ.Qjm5XSmfu7A7xvSFB-tgSXAUeTZe5D92Zgl2OrQ8RBo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"sdsdsdsds\",\n    \"startTime\": \"03-14-2021 14:00:00\", \n    \"endTime\": \"04-14-2021 14:00:00\",\n    \"startPrice\": 300000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGNlMTIzOGU1OTk2OWJhYzFmZjBmNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNjE1NjUxMTA3fQ.Qjm5XSmfu7A7xvSFB-tgSXAUeTZe5D92Zgl2OrQ8RBo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"03-14-2021 14:00:00\", \n    \"endTime\": \"\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction/id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGNlMTIzOGU1OTk2OWJhYzFmZjBmNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNjE1NjUxMTA3fQ.Qjm5XSmfu7A7xvSFB-tgSXAUeTZe5D92Zgl2OrQ8RBo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"03-14-2021 14:00:00\", \n    \"endTime\": \"\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "signedUser",
+					"item": [
+						{
+							"name": "localhost:4000/auction/live",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGRlMWY2MDk4YWRkNTYxNDdjMTBjOSIsInJvbGUiOltdLCJpYXQiOjE2MTU3MTY4NTR9.EtdyE-UjzCcWNrry_hNpKQF110ycRJ0U5zh0MSMB4uk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"03-14-2021 14:00:00\", \n    \"endTime\": \"\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction/live",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction",
+										"live"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction/604ddba150183546e57ba5d0/bid",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGU1ZjIzZDdiNTNkMjYxMGMyZTAwMiIsInJvbGUiOltdLCJpYXQiOjE2MTU3NDg4OTl9.gOZFKjHh_LJoXg67vzT8CKNtIjE-_bd7Vhv0jcHrm9g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auction/604e5c28b6b688f7ea47fe3b/bid",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auction",
+										"604e5c28b6b688f7ea47fe3b",
+										"bid"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/auction/id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"itemName\": \"TMobile\",\n    \"startTime\": \"03-14-2021 14:00:00\", \n    \"endTime\": \"\",\n    \"startPrice\": 300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/auction/604dca2d128d3320eb013305",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"auction",
+										"604dca2d128d3320eb013305"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "authservice",
+			"item": [
+				{
+					"name": "adminOnly",
+					"item": [
+						{
+							"name": "localhost:3000/user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ss\":\"ss\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/user/604cb98fc7f7c827c00877f3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/user/604cb98fc7f7c827c00877f3",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"604cb98fc7f7c827c00877f3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllUsers",
+					"item": [
+						{
+							"name": "localhost:3000/user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"piyush agarwal\",\n    \"username\": \"third\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/user",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "signeduser",
+					"item": [
+						{
+							"name": "localhost:3000/user/id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGUzYjhkNmI2MWFkZmMyMTgzNDZhOCIsInJvbGUiOltdLCJpYXQiOjE2MTU3Mzk3ODl9.19m7Yv8PaqxvGgp59G7S55zmM1SJriZnuyiqIBB9Hzc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/user/604e3c37e0f71afd316379b1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"604e3c37e0f71afd316379b1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/user/id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNGUzYjhkNmI2MWFkZmMyMTgzNDZhOCIsInJvbGUiOltdLCJpYXQiOjE2MTU3Mzk3ODl9.19m7Yv8PaqxvGgp59G7S55zmM1SJriZnuyiqIBB9Hzc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"piyush agarwal 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/user/604e2b297e08bbdcbb4ec992",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"604e2b297e08bbdcbb4ec992"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
