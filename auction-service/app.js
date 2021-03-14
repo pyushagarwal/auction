@@ -3,11 +3,23 @@ const mongoose = require('mongoose')
 const morgan = require('morgan');
 const bodyParser = require('body-parser')
 const _ = require('underscore')
+const logger = require('../common/logger').intializeLogger("AUCTION-SERVICE")
 const config = require('./config')
 const mongoUtils = require('../common/mongoUtils')
-const logger = require('../common/logger')
+const registerRoutes = function(){
+    const auctionRouter = require('./routes/auction_route')
+    const bidRouter = require('./routes/bidRoutes')
+    app.post('/auction', auctionRouter.createAuction);
+    app.get('/auction', auctionRouter.getAuctions);
+    app.get('/auction/live', auctionRouter.getLiveAuctions);
+    app.put('/auction/:auctionId', auctionRouter.updateAuctionById);
+    app.get('/auction/:auctionId', auctionRouter.getAuctionsById);
+    app.delete('/auction', auctionRouter.deleteAuctions);
+    app.delete('/auction/:auctionId', auctionRouter.deleteAuctions);
 
-
+    app.post('/auction/:auctionId/bid', bidRouter.makeBid);
+    // app.get('/auction/:auctionId/bid', bidRouter.getAllBids);
+}
 
 mongo_connection_created = mongoUtils.create_connection(config.MONGOURL)
 mongo_connection_created.then(function(){
@@ -17,9 +29,10 @@ mongo_connection_created.then(function(){
         extended: true
     }));
     app.use(express.json());
-    // registerRoutes(app)
+    registerRoutes(app)
+
     app.listen(config.PORT, ()=>{
-        logger.info(`Auction app started on port=3000`)
+        logger.info(`AUCTION SERVICE started on port=${config.PORT}`)
     })
 })
 
