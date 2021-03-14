@@ -6,7 +6,12 @@ This is an application which consists of 2 microservices. It is wriiten in node.
 Please use the attached postman collection
  The configurations for each service is present in their respective config.js file. Update the mongodb port inside config.js
  - auction-service/config.js
- - auth-service/config.js 
+ - auth-service/config.js
+
+### Features
+- All crud operations on user
+- CRUD operations have role based access. 3 types of access is available, admin, signedin-user and all users.
+- All crud on auctions including bidding
 
 ### Steps to Run
  - In a terminal, cd into project directory, run "npm install"
